@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da TV - Recepção</title>
+    <link rel="stylesheet" href="css/painel-tv.css">
+</head>
+<body>
+    <header>
+        <h1>Painel da TV - Recepção</h1>
+        <div class="header-info">
+            <span id="data-atual"></span>
+            <span id="horario-atual"></span>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div id="card-container">
+            <ul id="card-panel">
+                <li><a href="painel-medico.html">Painel do médico</a></li>
+                <li><a href="painel-tv.html" class="active">Painel da TV</a></li>
+                <li><a href="cadastro.html">Atendimento</a></li>
+                <li><a href="triagem.html">Triagem</a></li>
+            </ul>
+        </div>
+
+        <div class="painel-tv-container">
+            <div class="fila-info">
+                <h2>Fila de Atendimento</h2>
+                <div class="estatisticas">
+                    <div class="stat-card">
+                        <h3 id="total-pacientes">0</h3>
+                        <p>Pacientes na Fila</p>
+                    </div>
+                    <div class="stat-card urgente">
+                        <h3 id="pacientes-urgentes">0</h3>
+                        <p>Prioridade Alta</p>
+                    </div>
+                    <div class="stat-card medio">
+                        <h3 id="pacientes-medios">0</h3>
+                        <p>Prioridade Média</p>
+                    </div>
+                    <div class="stat-card normal">
+                        <h3 id="pacientes-normais">0</h3>
+                        <p>Prioridade Normal</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lista-tv-container">
+                <h3>Pacientes Aguardando</h3>
+                <div id="lista-pacientes-tv">
+                    <!-- Pacientes serão listados aqui -->
+                </div>
+            </div>
+
+            <div class="informacoes-adicionais">
+                <div class="legenda">
+                    <h4>Legenda de Prioridades:</h4>
+                    <div class="legenda-item alta">
+                        <span class="cor-indicador"></span>
+                        <span>Alta - Atendimento Prioritário</span>
+                    </div>
+                    <div class="legenda-item media">
+                        <span class="cor-indicador"></span>
+                        <span>Média - Atendimento Preferencial</span>
+                    </div>
+                    <div class="legenda-item normal">
+                        <span class="cor-indicador"></span>
+                        <span>Normal - Atendimento por Ordem de Chegada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/painel-tv.js"></script>
+</body>
+</html>
