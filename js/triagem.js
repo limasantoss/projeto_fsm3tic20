@@ -2,7 +2,7 @@ import { carregarPacientes } from './pacienteStorage.js';
 
 function listarPacientes() {
     const lista = document.getElementById('lista-pacientes');
-    lista.innerHTML = '<p>Lista de pacientes</p>';
+    lista.innerHTML = '<p><strong>Lista de pacientes</strong></p>';
 
     const pacientes = carregarPacientes();
 

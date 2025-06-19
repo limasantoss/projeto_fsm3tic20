@@ -1,17 +1,69 @@
-html {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-    margin: 0;
     background-color: #e8e8ec;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1; /* Faz o wrapper ocupar o espaço restante */
+    min-height: calc(100vh - 60px); /* Subtrai a altura do header */
+}
+
+header {
+    background-color: #1A237E;
+    flex-shrink: 0; /* Impede que o header encolha */
 }
 
 header h1 {
-    color: #;
+    margin-top: 0;
+    color: #FFFFFF;
     padding: 10px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-bottom: 0; /* Remove margem inferior */
+}
+
+#card-container {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+#card-panel {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #242e80;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+#card-panel li {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#card-panel a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #3949AB;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
 }
 
 #lista-pacientes {
@@ -23,7 +75,7 @@ header h1 {
     border-width: 1px;
     border-radius: 10px;
     max-width: 50vh;
-
+    flex: 1; /* Ocupa o espaço restante */
 }
 
 .card {
