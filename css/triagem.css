@@ -1,0 +1,49 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #e8e8ec;
+}
+
+header h1 {
+    color: #;
+    padding: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#lista-pacientes {
+    margin: 40px 100px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-color: #B2CBFA;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    max-width: 50vh;
+
+}
+
+.card {
+    background-color: #FFFFFF;
+    margin: 10px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.card strong {
+    color: #2F5DDA;
+}
+
+.card p {
+    color: #4A4A4A;
+}
+
+.card:hover {
+    background-color: #E5EEFF;
+    transform: scale(1.01);
+    transition: 0.3s;
+    box-shadow: 0 0 3px #90CAF9;
+}
