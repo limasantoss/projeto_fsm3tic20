@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #da52ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #82337f;
+}
+
+.card {
+  background-color: #e9f5ff;
+  border: 1px solid #ba25ff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

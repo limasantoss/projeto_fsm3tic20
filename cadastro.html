@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Atendimento</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Atendimento Médico</h1>
+
+        <form id="formulario-paciente">
+        <input type="text" id="nome" placeholder="Nome do paciente" required />
+        <input type="text" id="motivo" placeholder="Motivo da visita" required />
+        <button type="submit">Cadastrar o paciente</button>
+        </form>
+
+        <div id="lista-pacientes">
+        </div>
+    </div>
+    <script src="js/cadastro.js"></script>
+</body>
+</html>
