@@ -1,3 +1,5 @@
+import { carregarPacientes } from './pacienteStorage.js';
+
 const formulario = document.getElementById('formulario-paciente');
 const lista = document.getElementById('lista-pacientes');
 
@@ -6,14 +8,7 @@ function salvarPacientes(pacientes) {
   localStorage.setItem('pacientes', JSON.stringify(pacientes));
 }
 
-function carregarPacientes() {
-  const dados = localStorage.getItem('pacientes');
-  if(dados){
-    return JSON.parse(dados);
-  }else{
-    return [];
-  }
-}
+
 
 function listarPacientes() {
   const pacientes = carregarPacientes();

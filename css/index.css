@@ -39,6 +39,8 @@ header h1 {
     padding: 10px;
     transition: 0.3s;
     display: inline-block;
+    width: 150px;
+    text-align: center;
 }
 
 #card-panel a:hover {
