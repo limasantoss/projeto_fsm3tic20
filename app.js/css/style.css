@@ -1,0 +1,62 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #F6F7FB;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  background: #350866;
+  color: #fff;
+  margin: 0 0 32px 0;
+  padding: 22px 0;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+nav {
+  margin: 0 auto 22px auto;
+  max-width: 430px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 14px;
+  text-align: center;
+}
+nav a {
+  color: #350866;
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.07em;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover {
+  border-bottom: 2px solid #FF6F17;
+}
+main {
+  max-width: 430px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px #0002;
+  padding: 32px;
+}
+.paciente-lista li {
+  padding: 12px 8px;
+  margin-bottom: 10px;
+  border: 1px solid #35086633;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.paciente-lista li:hover {
+  background: #F4F0FB;
+}
+.hidden {
+  display: none !important;
+}
+.obs {
+  font-size: 0.96em;
+  color: #555;
+  margin-top: 14px;
+}

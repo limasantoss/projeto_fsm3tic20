@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #F6F7FB;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background: #350866;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 40px;
+}
+
+#lista-pacientes, #detalhes-paciente {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px #0002;
+  padding: 24px;
+  width: 340px;
+  min-height: 200px;
+}
+
+ul#pacientes {
+  list-style: none;
+  padding: 0;
+}
+
+ul#pacientes li {
+  padding: 14px 10px;
+  margin-bottom: 12px;
+  border: 1px solid #35086655;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+ul#pacientes li:hover {
+  background: #F4F0FB;
+}
+
+#detalhes-paciente textarea {
+  width: 100%;
+  min-height: 60px;
+  margin: 14px 0;
+  resize: vertical;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+#detalhes-paciente button {
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: none;
+  background: #FF6F17;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+#detalhes-paciente button#voltar {
+  background: #888;
+}
+
+#detalhes-paciente button:hover {
+  filter: brightness(0.95);
+}
+
+.hidden {
+  display: none;
+}

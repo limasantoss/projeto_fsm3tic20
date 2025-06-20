@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro do Paciente</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Cadastro do Paciente</h1>
+  <nav>
+    <a href="index.html">Menu</a>
+    <a href="painel-tv.html">Painel TV</a>
+    <a href="triagem.html">Triagem</a>
+    <a href="painel-medico.html">Médico</a>
+  </nav>
+  <main>
+    <form id="formCadastro">
+      <label>Nome</label>
+      <input type="text" id="nome" required>
+      <label>Idade</label>
+      <input type="number" id="idade" required>
+      <label>Sintomas</label>
+      <input type="text" id="sintomas" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+    <div id="msg" class="obs"></div>
+  </main>
+  <script src="js/flow.js"></script>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

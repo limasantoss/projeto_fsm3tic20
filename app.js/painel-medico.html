@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel do Médico</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Painel do Médico</h1>
+  <nav>
+    <a href="index.html">Menu</a>
+    <a href="cadastro.html">Cadastro</a>
+    <a href="painel-tv.html">Painel TV</a>
+    <a href="triagem.html">Triagem</a>
+  </nav>
+  <main>
+    <h2>Pacientes aguardando atendimento</h2>
+    <ul id="lista" class="paciente-lista"></ul>
+    <section id="atendimento" class="hidden">
+      <h3>Atender Paciente</h3>
+      <div id="dados"></div>
+      <label>Observações</label>
+      <textarea id="obs" required></textarea>
+      <button id="finalizar">Finalizar Atendimento</button>
+      <button id="voltar">Cancelar</button>
+    </section>
+  </main>
+  <script src="js/flow.js"></script>
+  <script src="js/painel-medico.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Triagem</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Triagem (Enfermeiro)</h1>
+  <nav>
+    <a href="index.html">Menu</a>
+    <a href="cadastro.html">Cadastro</a>
+    <a href="painel-tv.html">Painel TV</a>
+    <a href="painel-medico.html">Médico</a>
+  </nav>
+  <main>
+    <h2>Pacientes aguardando triagem</h2>
+    <ul id="lista" class="paciente-lista"></ul>
+    <section id="triagem" class="hidden">
+      <h3>Classificar Paciente</h3>
+      <div id="dados"></div>
+      <label>Prioridade</label>
+      <select id="prioridade" required>
+        <option value="">Selecione</option>
+        <option value="Vermelha">Vermelha (Emergência)</option>
+        <option value="Amarela">Amarela (Urgente)</option>
+        <option value="Verde">Verde (Pouco Urgente)</option>
+        <option value="Azul">Azul (Não Urgente)</option>
+      </select>
+      <button id="salvar">Salvar Triagem</button>
+      <button id="voltar">Cancelar</button>
+    </section>
+  </main>
+  <script src="js/flow.js"></script>
+  <script src="js/triagem.js"></script>
+</body>
+</html>
